@@ -3,7 +3,7 @@ import { TodoCounter } from "./components/TodoCounter/TodoCounter";
 import { TodoSearch } from "./components/TodoSearch/TodoSearch";
 import { TodoList } from "./components/TodoList/TodoList";
 import { TodoItem } from "./components/TodoItem/TodoItem";
-import { CreateTodoButtom } from "./components/CreateTodoButtom/CreateTodoButtom";
+import { CreateTodoButton } from "./components/CreateTodoButton/CreateTodoButton";
 import './App.css';
 
 const todos =[
@@ -24,7 +24,7 @@ function App() {
           <TodoItem key={todo.text} text={todo.text} />
         ))}
       </TodoList>
-      <CreateTodoButtom />
+      <CreateTodoButton />
     </>
   );
 }
