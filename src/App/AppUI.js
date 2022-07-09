@@ -22,7 +22,7 @@ function AppUI({
         <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
 
         <TodoList>
-            {error && <p>Desespérate, hubo un error...</p>}
+            {error && <p>Tenemos un error...</p>}
             {loading && <p>Estamos cargando, no desesperes...</p>}
             {!loading && !searchedTodos.length && <p>¡Crea tu primer TODO!</p>}
 
