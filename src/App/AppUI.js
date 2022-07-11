@@ -32,7 +32,7 @@ function AppUI() {
                 {loading && <TodosLoading />}
                 {(!loading && !searchedTodos.length) && <EmptyTodos />}
 
-                {searchedTodos.map((todo) => (
+                {searchedTodos.map(todo => (
                 <TodoItem
                     key={todo.text}
                     text={todo.text}
@@ -42,6 +42,7 @@ function AppUI() {
                 />
                 ))}
             </TodoList>
+
             {!!openModal && (
                 <Modal>
                     <TodoForm/>
@@ -52,6 +53,6 @@ function AppUI() {
             />
         </React.Fragment>
     );
-    }
+}
 
 export { AppUI };
